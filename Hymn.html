@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian colony international church hymn </title>
+    <link rel="shortcut icon" href="../Images/church logo png.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-200 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white-900 text-white py-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div class="flex items-center">
+                <img src="../Images/church logo png.png" alt="Church Logo" class="w-16 h-16 mr-4">
+                <div>
+                    <h1 class="text-2xl font-bold">Christian Colony International Church</h1>
+                    <p class="text-sm italic">"Illuminating the world with his word"</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4">
+        <!-- Search and Grid Button -->
+        <div class="flex justify-between items-center mb-6">
+            <button id="gridViewBtn" class="bg-green-600 text-white py-2 px-4 rounded-md shadow hover:bg-green-700">
+                Show All Hymns
+            </button>
+            <input type="text" id="searchBar" class="border border-gray-300 rounded-md py-2 px-4 w-1/3" 
+                   placeholder="Search for a hymn...">
+        </div>
+
+        <!-- Hymns List -->
+        <div id="hymnsList" class="grid gap-4 md:grid-cols-3">
+            <!-- Hymns will be dynamically generated here -->
+        </div>
+    </main>
+    <script src="./hymn.js" ></script>
+</body>
+</html>
